@@ -1,6 +1,6 @@
-import grini from "../assets/grini.jpg";
 import gloria from "../assets/gloriagolfsign.jpg";
 import golfcart from "../assets/golfcart.jpg";
+import grini from "../assets/grini.jpg";
 
 const GolfStory = () => {
   return (
