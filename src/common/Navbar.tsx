@@ -75,6 +75,7 @@ const Navbar: React.FC = () => {
           className="md:hidden flex h-10 w-10 flex-col items-center justify-center bg-transparent p-0 border-0 appearance-none focus:outline-none"
           onClick={toggleMenu}
           aria-label={isOpen ? "Lukk meny" : "Åpne meny"}
+          style={{ backgroundColor: "transparent", border: "none", padding: 0 }}
         >
           <span
             className={`block h-[2px] w-5 bg-white transition-transform ${
@@ -101,6 +102,7 @@ const Navbar: React.FC = () => {
             onClick={closeMenu}
             aria-label="Lukk meny"
             className="absolute right-6 top-6 bg-transparent text-sm uppercase tracking-widest text-white/80"
+            style={{ backgroundColor: "transparent", border: "none", padding: 0 }}
           >
             Lukk
           </button>
