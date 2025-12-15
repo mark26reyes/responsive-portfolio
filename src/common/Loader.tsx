@@ -1,3 +1,5 @@
+import mdrLogo from "../assets/MDR.png";
+
 type LoaderProps = {
   fadeOut: boolean;
 };
@@ -23,11 +25,7 @@ export default function Loader({ fadeOut }: LoaderProps) {
           }
         `}
       >
-        <img
-          src="/src/assets/MDR.png" // bytt til riktig path til logoen
-          alt="MDR logo"
-          className="w-80 md:w-80 lg:w-80"
-        />
+        <img src={mdrLogo} alt="MDR logo" className="w-80 md:w-80 lg:w-80" />
       </div>
     </div>
   );

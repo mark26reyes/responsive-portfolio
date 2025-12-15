@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import mdrLogo from "../assets/MDR.png";
+import homeIcon from "../assets/home-icon.png";
 
 const navLinks = [
   { href: "#about", label: "Om meg" },
@@ -29,7 +31,7 @@ const Navbar: React.FC = () => {
           onClick={closeMenu}
           aria-label="Til toppen"
         >
-          <img src="/src/assets/MDR.png" alt="MDR" className="w-30" />
+          <img src={mdrLogo} alt="MDR" className="w-30" />
         </a>
 
         {/* Desktop / tablet nav */}
@@ -41,7 +43,7 @@ const Navbar: React.FC = () => {
             aria-label="Hjem"
           >
             <span className="text-xl leading-none">
-              <img src="/src/assets/home-icon.png" alt="" />
+              <img src={homeIcon} alt="" />
             </span>
           </a>
 
@@ -70,7 +72,7 @@ const Navbar: React.FC = () => {
 
         <button
           type="button"
-          className="md:hidden flex h-10 w-10 flex-col items-center justify-center"
+          className="md:hidden flex h-10 w-10 flex-col items-center justify-center bg-transparent p-0 border-0 appearance-none focus:outline-none"
           onClick={toggleMenu}
           aria-label={isOpen ? "Lukk meny" : "Åpne meny"}
         >
