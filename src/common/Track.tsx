@@ -17,7 +17,10 @@ const TrackStory = () => {
         </p>
 
         <div className="about-meta">
-          <span>Personlig rekord 10.61</span>
+          <span>Personlig rekord:</span>
+          <span>(60M, 6.80)</span>
+          <span>(100M, 10.61)</span>
+          <span>(200M, 22.04)</span>
         </div>
       </div>
 

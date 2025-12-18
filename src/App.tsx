@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Hero from "./sections/Hero/Hero";
 import AboutSection from "./sections/About/About";
+import ProjectsSection from "./sections/Projects/Project";
 import Loader from "./common/Loader";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       {/* Hero får vite om siden fortsatt loader for å styre sin egen fade-in */}
       <Hero isLoading={isLoading} />
       <AboutSection />
+      <ProjectsSection />
     </div>
   );
 }

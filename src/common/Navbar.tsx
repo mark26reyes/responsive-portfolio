@@ -10,6 +10,7 @@ const navLinks = [
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
   const closeMenu = () => setIsOpen(false);
@@ -21,8 +22,24 @@ const Navbar: React.FC = () => {
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 5);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-40 w-full px-6 py-4">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-40 w-full px-6 py-4 transition-colors duration-300 ${
+        isScrolled
+          ? "bg-gradient-to-b from-black/90 via-black/60 to-black/0"
+          : "bg-transparent"
+      }`}
+    >
       <div className="mx-auto flex max-w-8xl items-center justify-between text-white font-light">
         {/* Logo */}
         <a
@@ -102,7 +119,11 @@ const Navbar: React.FC = () => {
             onClick={closeMenu}
             aria-label="Lukk meny"
             className="absolute right-6 top-6 bg-transparent text-sm uppercase tracking-widest text-white/80"
-            style={{ backgroundColor: "transparent", border: "none", padding: 0 }}
+            style={{
+              backgroundColor: "transparent",
+              border: "none",
+              padding: 0,
+            }}
           >
             Lukk
           </button>

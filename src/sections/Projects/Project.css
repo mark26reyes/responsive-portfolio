@@ -1,0 +1,161 @@
+.projects-section {
+  position: relative;
+  background-color: #ffffff;
+  padding: 140px 0 200px;
+  color: #1f1f1c;
+  overflow: hidden;
+}
+
+.projects-bg {
+  position: absolute;
+  inset: 0;
+  top: -140px;
+  height: 260px;
+  background-color: inherit;
+  clip-path: polygon(
+    0% 80%,
+    4% 72%,
+    10% 78%,
+    18% 66%,
+    26% 74%,
+    34% 62%,
+    42% 70%,
+    50% 45%,
+    58% 30%,
+    68% 38%,
+    76% 32%,
+    86% 44%,
+    100% 58%,
+    100% 0%,
+    0% 0%
+  );
+  z-index: 0;
+}
+
+.projects-inner {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0 2rem;
+}
+
+.projects-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.projects-eyebrow {
+  font-family: "PP Editorial New", sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #5b5c4c;
+  font-weight: lighter;
+}
+
+.projects-intro {
+  color: #4d4d45;
+  line-height: 1.65;
+}
+
+.projects-list {
+  margin-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+  align-items: center;
+}
+
+.project-item {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.project-text {
+  flex: 1;
+  max-width: 420px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.project-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-text h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #4c4c3c;
+  margin-bottom: 0.35rem;
+}
+
+.project-description {
+  color: #4d4d45;
+  line-height: 1.6;
+  margin-bottom: 0.6rem;
+}
+
+.project-link {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #343426;
+  font-weight: 600;
+  position: relative;
+}
+
+.project-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.project-link:hover::after {
+  transform: scaleX(0.5);
+}
+
+.project-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.project-logo img {
+  width: 200px;
+  height: auto;
+}
+
+.project-track {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .project-item {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .project-item.reverse {
+    flex-direction: column;
+  }
+
+  .project-logo {
+    order: 3;
+    justify-content: center;
+  }
+
+  .projects-list {
+    gap: 4rem;
+  }
+}

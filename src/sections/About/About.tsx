@@ -1,6 +1,6 @@
 import { useState, type TouchEvent } from "react";
 import "./About.css";
-import AboutStory from "../../common/About";
+import AboutStory from "../../common/AboutStory";
 import TrackStory from "../../common/Track";
 import GolfStory from "../../common/Golf";
 
