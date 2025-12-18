@@ -1,0 +1,158 @@
+.experience-section {
+  position: relative;
+  padding: clamp(4rem, 8vw, 8rem) 0 clamp(4rem, 8vw, 8rem);
+  background-color: #eeede4;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #2c2c2c;
+}
+
+.experience-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.experience-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 3rem;
+}
+
+.experience-title {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #2f453f;
+  font-weight: lighter;
+}
+
+.experience-intro {
+  line-height: 1.7;
+  color: #3f4a46;
+}
+
+.experience-skills {
+  margin: 4rem auto 5rem;
+  text-align: center;
+}
+
+.experience-subtitle {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #32423d;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.experience-skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.experience-skill-pill {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  color: #32423d;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.experience-work {
+  margin-top: 5rem;
+}
+
+.experience-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.experience-card {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 0px;
+  box-shadow: 0 20px 40px rgba(8, 25, 33, 0.12);
+  opacity: 0.2;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.experience-card.reverse {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.experience-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.experience-details {
+  flex: 1;
+}
+
+.experience-details h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  margin: 0.25rem 0 0.5rem;
+  color: #30443d;
+  font-weight: 400;
+}
+
+.experience-period {
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6a7b77;
+}
+
+.experience-summary {
+  color: #3d4b46;
+  line-height: 1.6;
+}
+
+.experience-highlights {
+  flex: 1;
+}
+
+.experience-highlights ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.6;
+  color: #3d4b46;
+}
+
+.experience-highlights li {
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 900px) {
+  .experience-card,
+  .experience-card.reverse {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .experience-card {
+    padding: 2rem;
+  }
+
+  .experience-highlights ul {
+    padding-left: 1rem;
+  }
+}

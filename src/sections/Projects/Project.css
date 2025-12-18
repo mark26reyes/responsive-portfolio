@@ -1,35 +1,18 @@
 .projects-section {
   position: relative;
-  background-color: #ffffff;
-  padding: 140px 0 200px;
+  background-color: #fdf7ed;
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../../assets/clouds.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0 200px;
   color: #1f1f1c;
   overflow: hidden;
-}
-
-.projects-bg {
-  position: absolute;
-  inset: 0;
-  top: -140px;
-  height: 260px;
-  background-color: inherit;
-  clip-path: polygon(
-    0% 80%,
-    4% 72%,
-    10% 78%,
-    18% 66%,
-    26% 74%,
-    34% 62%,
-    42% 70%,
-    50% 45%,
-    58% 30%,
-    68% 38%,
-    76% 32%,
-    86% 44%,
-    100% 58%,
-    100% 0%,
-    0% 0%
-  );
-  z-index: 0;
 }
 
 .projects-inner {
@@ -75,6 +58,14 @@
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
+  opacity: 0.25;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.project-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .project-text {
@@ -157,5 +148,9 @@
 
   .projects-list {
     gap: 4rem;
+  }
+
+  .projects-eyebrow {
+    font-size: 3rem;
   }
 }

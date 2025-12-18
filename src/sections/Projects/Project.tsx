@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import "./Project.css";
 
 import matsparLogo from "../../assets/matspar.png";
@@ -49,6 +50,32 @@ const zigZagPath =
   "M20 0 C 45 30, 80 30, 110 10 S 150 70, 120 100 S 70 130, 110 170 S 160 210, 130 240";
 
 export default function ProjectsSection() {
+  const projectRefs = useRef<(HTMLElement | null)[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const target = entry.target as HTMLElement;
+          if (entry.isIntersecting) {
+            target.classList.add("is-visible");
+          } else {
+            target.classList.remove("is-visible");
+          }
+        });
+      },
+      { threshold: 0.35, rootMargin: "0px 0px -10% 0px" }
+    );
+
+    projectRefs.current.forEach((element) => {
+      if (element) {
+        observer.observe(element);
+      }
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section id="work" className="projects-section">
       <div className="projects-bg" aria-hidden="true" />
@@ -67,6 +94,9 @@ export default function ProjectsSection() {
           {projects.map((project, index) => (
             <article
               key={project.title}
+              ref={(element) => {
+                projectRefs.current[index] = element;
+              }}
               className={`project-item ${index % 2 === 1 ? "" : "reverse"}`}
             >
               <div className="project-text">
