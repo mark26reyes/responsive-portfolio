@@ -113,12 +113,12 @@ const Navbar: React.FC = () => {
       </div>
 
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-8 bg-black/15 px-6 text-center text-white font-light backdrop-blur-sm md:hidden">
+        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-8 bg-black/50 px-6 text-center text-white font-light backdrop-blur-sm md:hidden">
           <button
             type="button"
             onClick={closeMenu}
             aria-label="Lukk meny"
-            className="absolute right-6 top-6 bg-transparent text-sm uppercase tracking-widest text-white/80"
+            className="absolute right-6 top-16 bg-transparent text-sm uppercase tracking-widest text-white/80"
             style={{
               backgroundColor: "transparent",
               border: "none",

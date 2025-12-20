@@ -4,6 +4,8 @@ import Hero from "./sections/Hero/Hero";
 import AboutSection from "./sections/About/About";
 import ProjectsSection from "./sections/Projects/Project";
 import ExperienceSection from "./sections/Experience/Experience";
+import ContactSection from "./sections/Contact/Contact";
+import Footer from "./common/Footer";
 import Loader from "./common/Loader";
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
       <AboutSection />
       <ProjectsSection />
       <ExperienceSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 }
