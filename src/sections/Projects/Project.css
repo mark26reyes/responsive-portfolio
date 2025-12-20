@@ -32,8 +32,8 @@
 .projects-eyebrow {
   font-family: "PP Editorial New", sans-serif;
   font-size: 4rem;
-  margin-bottom: 1.5rem;
-  color: #5b5c4c;
+  margin-bottom: 1rem;
+  color: #4c4c3c;
   font-weight: lighter;
 }
 
@@ -80,7 +80,7 @@
 
 .project-text h3 {
   font-family: "Playfair Display", serif;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 400;
   color: #4c4c3c;
   margin-bottom: 0.35rem;
@@ -151,6 +151,6 @@
 
   .projects-eyebrow {
     font-family: "PP Editorial New", sans-serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
