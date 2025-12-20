@@ -30,7 +30,7 @@
 }
 
 .projects-eyebrow {
-  font-family: "PP Editorial New", sans-serif;
+  font-family: var(--font-heading, "PP Editorial New", serif);
   font-size: 4rem;
   margin-bottom: 1rem;
   color: #4c4c3c;
