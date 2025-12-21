@@ -50,8 +50,31 @@ function App() {
     const shouldSkip = sessionStorage.getItem("skipSmoothScroll") === "1";
     if (shouldSkip) {
       sessionStorage.removeItem("skipSmoothScroll");
+      const isCompact = window.matchMedia("(max-width: 900px)").matches;
       const previousBehavior = document.documentElement.style.scrollBehavior;
       document.documentElement.style.scrollBehavior = "auto";
+      if (isCompact) {
+        let attempts = 0;
+        const maxAttempts = 4;
+        const tryScroll = () => {
+          attempts += 1;
+          const target = document.getElementById(targetId);
+          if (target) {
+            target.scrollIntoView({ behavior: "auto" });
+            document.documentElement.style.scrollBehavior = previousBehavior;
+            return;
+          }
+          if (attempts < maxAttempts) {
+            setTimeout(tryScroll, 80 * attempts);
+          } else {
+            document.documentElement.style.scrollBehavior = previousBehavior;
+          }
+        };
+
+        requestAnimationFrame(tryScroll);
+        return;
+      }
+
       requestAnimationFrame(() => {
         const target = document.getElementById(targetId);
         if (target) {

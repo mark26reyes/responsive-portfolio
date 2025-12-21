@@ -48,7 +48,7 @@ export default function OneHub() {
 
   return (
     <div className="project-page">
-      <Navbar basePath="/" />
+      <Navbar basePath="/" forceBackground />
       <main id="onehub" className="project-main">
         <div className="project-container" ref={contentRef}>
           <a

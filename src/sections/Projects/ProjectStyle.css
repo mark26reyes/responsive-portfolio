@@ -201,6 +201,10 @@
 }
 
 @media (max-width: 900px) {
+  .project-main {
+    padding-top: 170px;
+  }
+
   .project-hero-logo {
     width: auto;
   }
@@ -212,7 +216,7 @@
 
 @media (max-width: 700px) {
   .project-main {
-    padding: 120px 20px 80px;
+    padding: 150px 20px 80px;
   }
 
   .project-meta {

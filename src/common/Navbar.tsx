@@ -10,9 +10,10 @@ const navLinks = [
 
 type NavbarProps = {
   basePath?: string;
+  forceBackground?: boolean;
 };
 
-const Navbar: React.FC<NavbarProps> = ({ basePath = "" }) => {
+const Navbar: React.FC<NavbarProps> = ({ basePath = "", forceBackground }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -35,6 +36,10 @@ const Navbar: React.FC<NavbarProps> = ({ basePath = "" }) => {
   }, [isOpen]);
 
   useEffect(() => {
+    if (forceBackground) {
+      setIsScrolled(true);
+      return;
+    }
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 5);
     };
@@ -42,7 +47,7 @@ const Navbar: React.FC<NavbarProps> = ({ basePath = "" }) => {
     handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [forceBackground]);
 
   return (
     <nav
