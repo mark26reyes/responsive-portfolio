@@ -49,6 +49,17 @@ const trackShades = ["#cfdccf", "#adc0a3", "#8da17e", "#6d7c5a"];
 const zigZagPath =
   "M20 0 C 45 30, 80 30, 110 10 S 150 70, 120 100 S 70 130, 110 170 S 160 210, 130 240";
 
+const projectRoutes = ["#matspar", "#onehub", "#harmoni", "#fristil"];
+
+const handleProjectClick = (link: string) => {
+  if (!projectRoutes.includes(link)) return;
+  sessionStorage.setItem(
+    "restoreScrollBehavior",
+    document.documentElement.style.scrollBehavior
+  );
+  document.documentElement.style.scrollBehavior = "auto";
+};
+
 export default function ProjectsSection() {
   const projectRefs = useRef<(HTMLElement | null)[]>([]);
 
@@ -102,7 +113,11 @@ export default function ProjectsSection() {
               <div className="project-text">
                 <h3>{project.title}</h3>
                 <p className="project-description">{project.description}</p>
-                <a href={project.link} className="project-link">
+                <a
+                  href={project.link}
+                  className="project-link"
+                  onClick={() => handleProjectClick(project.link)}
+                >
                   Utforsk mer
                 </a>
               </div>

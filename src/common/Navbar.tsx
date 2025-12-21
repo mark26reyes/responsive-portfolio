@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type MouseEvent } from "react";
 import mdrLogo from "../assets/MDR.png";
 import homeIcon from "../assets/home-icon.png";
 
@@ -8,12 +8,24 @@ const navLinks = [
   { href: "#experience", label: "Erfaring" },
 ];
 
-const Navbar: React.FC = () => {
+type NavbarProps = {
+  basePath?: string;
+};
+
+const Navbar: React.FC<NavbarProps> = ({ basePath = "" }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
   const closeMenu = () => setIsOpen(false);
+  const isProjectNav = basePath.length > 0;
+
+  const handleNavClick = (event: MouseEvent<HTMLAnchorElement>, hash: string) => {
+    if (!isProjectNav) return;
+    event.preventDefault();
+    window.location.hash = hash;
+    closeMenu();
+  };
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
@@ -43,9 +55,12 @@ const Navbar: React.FC = () => {
       <div className="mx-auto flex max-w-8xl items-center justify-between text-white font-light">
         {/* Logo */}
         <a
-          href="#hero"
+          href={`${basePath}#hero`}
           className="flex items-center gap-2"
-          onClick={closeMenu}
+          onClick={(event) => {
+            handleNavClick(event, "#hero");
+            if (!isProjectNav) closeMenu();
+          }}
           aria-label="Til toppen"
         >
           <img src={mdrLogo} alt="MDR" className="w-30" />
@@ -54,9 +69,12 @@ const Navbar: React.FC = () => {
         {/* Desktop / tablet nav */}
         <div className="hidden md:flex items-center gap-10 rounded-full bg-black/60 px-6 py-3">
           <a
-            href="#hero"
+            href={`${basePath}#hero`}
             className="flex h-10 w-10 items-center justify-center transition-colors hover:opacity-70"
-            onClick={closeMenu}
+            onClick={(event) => {
+              handleNavClick(event, "#hero");
+              if (!isProjectNav) closeMenu();
+            }}
             aria-label="Hjem"
           >
             <span className="text-xl leading-none">
@@ -68,8 +86,12 @@ const Navbar: React.FC = () => {
             {navLinks.map((link) => (
               <a
                 key={link.href}
-                href={link.href}
+                href={`${basePath}${link.href}`}
                 className="transition hover:opacity-70"
+                onClick={(event) => {
+                  handleNavClick(event, link.href);
+                  if (!isProjectNav) closeMenu();
+                }}
               >
                 {link.label}
               </a>
@@ -80,8 +102,12 @@ const Navbar: React.FC = () => {
         {/* Desktop CTA */}
         <div className="hidden md:flex">
           <a
-            href="#contact"
+            href={`${basePath}#contact`}
             className="inline-flex items-center rounded-full border border-white/80 px-5 py-2 text-sm tracking-wide transition bg-black/50 hover:bg-black/70 text-white font-light"
+            onClick={(event) => {
+              handleNavClick(event, "#contact");
+              if (!isProjectNav) closeMenu();
+            }}
           >
             Ta kontakt
           </a>
@@ -129,8 +155,11 @@ const Navbar: React.FC = () => {
           </button>
 
           <a
-            href="#hero"
-            onClick={closeMenu}
+            href={`${basePath}#hero`}
+            onClick={(event) => {
+              handleNavClick(event, "#hero");
+              if (!isProjectNav) closeMenu();
+            }}
             className="text-2xl tracking-wide hover:opacity-70"
           >
             Hjem
@@ -138,8 +167,11 @@ const Navbar: React.FC = () => {
           {navLinks.map((link) => (
             <a
               key={link.href}
-              href={link.href}
-              onClick={closeMenu}
+              href={`${basePath}${link.href}`}
+              onClick={(event) => {
+                handleNavClick(event, link.href);
+                if (!isProjectNav) closeMenu();
+              }}
               className="text-2xl tracking-wide hover:opacity-70"
             >
               {link.label}
@@ -147,8 +179,11 @@ const Navbar: React.FC = () => {
           ))}
 
           <a
-            href="#contact"
-            onClick={closeMenu}
+            href={`${basePath}#contact`}
+            onClick={(event) => {
+              handleNavClick(event, "#contact");
+              if (!isProjectNav) closeMenu();
+            }}
             className="mt-4 inline-flex items-center rounded-full border border-white/70 px-6 py-2 text-lg tracking-wide hover:bg-white/10"
           >
             Ta kontakt
