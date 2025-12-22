@@ -1,9 +1,26 @@
+import { type FormEvent } from "react";
 import "./Contact.css";
 
 import golfPhoto from "../../assets/minigolf.jpg";
 import markSide from "../../assets/beer.jpg";
 
 export default function ContactSection() {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    const name = String(formData.get("name") ?? "").trim();
+    const email = String(formData.get("email") ?? "").trim();
+    const message = String(formData.get("message") ?? "").trim();
+
+    const subject = encodeURIComponent(`Kontakt fra ${name || "Nettside"}`);
+    const body = encodeURIComponent(
+      `Navn: ${name}\nE-post: ${email}\n\nMelding:\n${message}`
+    );
+
+    window.location.href = `mailto:mark26reyes@gmail.com?subject=${subject}&body=${body}`;
+  };
+
   return (
     <section id="contact" className="contact-section">
       <div className="contact-inner">
@@ -17,15 +34,20 @@ export default function ContactSection() {
         </header>
 
         <div className="contact-grid">
-          <form className="contact-form">
+          <form className="contact-form" onSubmit={handleSubmit}>
             <label>
               Navn
-              <input type="text" name="name" placeholder="Ditt navn" />
+              <input type="text" name="name" placeholder="Ditt navn" required />
             </label>
 
             <label>
               E-post
-              <input type="email" name="email" placeholder="navn@email.com" />
+              <input
+                type="email"
+                name="email"
+                placeholder="navn@email.com"
+                required
+              />
             </label>
 
             <label>
@@ -34,6 +56,7 @@ export default function ContactSection() {
                 name="message"
                 rows={5}
                 placeholder="Hva ønsker du å snakke om?"
+                required
               />
             </label>
 
