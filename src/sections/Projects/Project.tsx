@@ -24,21 +24,21 @@ const projects: Project[] = [
   {
     title: "OneHub",
     description:
-      "Et system som samler informasjon fra ulike apper og gir en sømløs opplevelse for intern kommunikasjon og digitalt samarbeid.",
+      "En app som samler strømmetjenester og gjør det enklere å oppdage nytt innhold,inspirert av TikTok og sosiale medier.",
     link: "#onehub",
     logo: onehubLogo,
   },
   {
     title: "Harmoni",
     description:
-      "En app for psykisk helse som gjør det lettere å utforske verktøy for å stabilisere hverdagen, komme ned i puls og bygge trygghet.",
+      "En app for psykisk helse som tilbyr råd, støtte og verktøy for å håndtere hverdagen, designet med omtanke og trygghet.",
     link: "#harmoni",
     logo: harmoniLogo,
   },
   {
     title: "Fristil",
     description:
-      "Et inkluderende prosjekt skapt for kreativt frislipp. Alt fra animasjoner og motion til identiteter og scenografi.",
+      "Et bachelorprosjekt utviklet for Fristil Records AS, en moderne og visuell nettside skreddersydd for ungdom og norske artister.",
     link: "#fristil",
     logo: fristilLogo,
   },
@@ -92,12 +92,14 @@ export default function ProjectsSection() {
       <div className="projects-bg" aria-hidden="true" />
       <div className="projects-inner">
         <header className="projects-header">
-          <h1 className="projects-eyebrow">Mitt kreative univers!</h1>
+          <h1 className="projects-eyebrow">Utvalgte prosjekter</h1>
           <p className="projects-intro">
-            “Velkommen til mitt kreative univers”, og her kan du oppleve noen av
-            mine mest unike prosjekter hvor design og idé møter funksjon.
-            Utforsk alt fra digital konseptutvikling til identitetsprosjekter
-            skapt for å bygge opplevelser og gjøre hverdagen litt bedre.
+            <b>Fra ide til brukeropplevelsen. </b>Her finner du et utvalg
+            prosjekter der jeg har jobbet med UX- og interaksjonsdesign fra
+            innsikt og konseptutvikling til ferdige prototyper og utviklede
+            løsninger. Prosjektene viser hvordan jeg jobber brukersentrert,
+            iterativt og med fokus på funksjonelle, gjennomtenkte digitale
+            opplevelser.
           </p>
         </header>
 

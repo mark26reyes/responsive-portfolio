@@ -75,8 +75,9 @@ export default function Harmoni() {
             <div className="project-hero-text">
               <h1>Harmoni</h1>
               <p>
-                En app for psykisk helse som hjelper brukeren å finne ro, struktur
-                og trygge rutiner i hverdagen.
+                Harmoni er en konseptuell mobilapp som støtter psykisk helse hos
+                unge voksne gjennom daglig egenomsorg, trygg tilgang til
+                ressurser og mulighet for å hjelpe andre.
               </p>
             </div>
             <div className="project-hero-logo">
@@ -91,22 +92,26 @@ export default function Harmoni() {
               <span>Rolle:</span> UX/UI Designer
             </p>
             <p>
-              <span>Varighet:</span> 5 uker
+              <span>Varighet:</span> 8 uker
             </p>
             <p>
-              <span>Team:</span> Gruppeprosjekt
+              <span>Team:</span> Tverrfaglig gruppe
             </p>
             <p>
-              <span>Verktøy:</span> Figma, FigJam
+              <span>Verktøy:</span> Figma, Miro
             </p>
           </div>
 
           <section className="project-section project-reveal">
             <h2>Kort om prosjektet</h2>
             <p>
-              Harmoni ble utviklet for å gjøre det enklere å jobbe med mental
-              helse i en hektisk hverdag. Fokus var å skape et trygt, rolig og
-              brukervennlig grensesnitt som oppleves støttende over tid.
+              Prosjektet ble utviklet som en semesteroppgave i emnet
+              Designprosjekt ved Høyskolen Kristiania. Målet var å utforske
+              hvordan en digital løsning kan bidra til å redusere stigma rundt
+              psykisk helse og gjøre støtte mer tilgjengelig i hverdagen.
+              Løsningen er basert på brukersentrert design, universell utforming
+              og iterativ prototyping, og ble kontinuerlig forbedret gjennom
+              brukertesting.
             </p>
           </section>
 
@@ -115,13 +120,23 @@ export default function Harmoni() {
           <section className="project-section project-reveal">
             <h2>Problem &amp; mål</h2>
             <p>
-              Hvordan kan vi gi brukere en enkel, lavterskel måte å regulere
-              stress, følge egne rutiner og utforske verktøy for mental balanse?
+              Hvordan kan en digital løsning støtte unge voksne med mild til
+              moderat psykisk ubehag, redusere stigma rundt psykisk helse og
+              gjøre det enklere å søke hjelp, både for seg selv og for andre?
             </p>
             <ul className="project-list">
-              <li>Skape trygghet gjennom tydelig struktur og rolig visuelt uttrykk</li>
-              <li>Gjøre mentale øvelser lett tilgjengelige i hverdagen</li>
-              <li>Støtte små, bærekraftige vaner over tid</li>
+              <li>
+                Gi brukerne lett tilgjengelig støtte og verktøy for egen psykisk
+                helse
+              </li>
+              <li>
+                Senke terskelen for å søke hjelp og oppmuntre til åpenhet og
+                dialog
+              </li>
+              <li>
+                Tilrettelegge for at brukere kan støtte venner som viser tegn på
+                psykisk ubehag
+              </li>
             </ul>
           </section>
 
@@ -130,10 +145,10 @@ export default function Harmoni() {
           <section className="project-section project-reveal">
             <h2>Min rolle</h2>
             <ul className="project-list">
-              <li>Brukerinnsikt og definering av behov</li>
-              <li>Design av informasjonsarkitektur</li>
-              <li>UI-design og prototyping</li>
-              <li>Testing og iterasjoner</li>
+              <li>Innsiktsarbeid og analyse av brukerbehov</li>
+              <li>Utvikling av konseptuell modell og informasjonsarkitektur</li>
+              <li>Interaksjonsdesign og prototyping i Figma</li>
+              <li>Planlegging, gjennomføring og analyse av brukertester</li>
             </ul>
           </section>
 
@@ -142,10 +157,22 @@ export default function Harmoni() {
           <section className="project-section project-reveal">
             <h2>Designprosess</h2>
             <ul className="project-list">
-              <li>Fase 1: Brukerinnsikt og problemdefinisjon</li>
-              <li>Fase 2: Konseptutvikling og struktur</li>
-              <li>Fase 3: Visuell retning og interaktiv prototyping</li>
-              <li>Fase 4: Brukertesting og refinering</li>
+              <li>
+                Fase 1: Kartlegging av behov, utfordringer og eksisterende
+                løsninger innen psykisk helse
+              </li>
+              <li>
+                Fase 2: Utarbeidelse av konseptuell modell, oversiktskart og
+                trådskisser
+              </li>
+              <li>
+                Fase 3: Utvikling av klikkbare wireframes og high-fidelity
+                prototype i Figma
+              </li>
+              <li>
+                Fase 4: Brukertesting med representative deltakere og
+                forbedringer basert på funn
+              </li>
             </ul>
           </section>
 
@@ -154,8 +181,12 @@ export default function Harmoni() {
           <section className="project-section project-solution project-reveal">
             <h2>Løsning</h2>
             <p>
-              Harmoni samler pusteøvelser, refleksjon og daglig logg i en rolig
-              og oversiktlig app som gjør det lettere å bygge trygge rutiner.
+              Harmoni samler funksjoner som oppmerksomhetstrening, humørsporing,
+              råd og ressurser, chatbot, nødhjelp og «hjelp en venn» i én
+              helhetlig app. Løsningen er designet for å være trygg,
+              inkluderende og enkel å bruke, med tydelig navigasjon, beroligende
+              visuelle valg og fokus på universell utforming. Appen gir brukerne
+              både støtte i egen hverdag og verktøy for å hjelpe andre.
             </p>
             <img src={harmoniMockups} alt="Harmoni mockups" />
           </section>
@@ -165,13 +196,22 @@ export default function Harmoni() {
           <section className="project-section project-reveal">
             <h2>Viktige lærdommer</h2>
             <ul className="project-list">
-              <li>Rolig visuell tone skaper trygghet og tilhørighet</li>
-              <li>Små, konkrete funksjoner gir størst verdi for brukeren</li>
-              <li>Iterasjon gir bedre flyt og tydeligere struktur</li>
+              <li>
+                Tidlig og kontinuerlig brukertesting avdekker kritiske
+                forbedringsområder
+              </li>
+              <li>
+                God informasjonsarkitektur er avgjørende i sensitive og
+                komplekse domener
+              </li>
+              <li>
+                Universell utforming styrker brukeropplevelsen for alle, ikke
+                bare enkelte grupper
+              </li>
             </ul>
             <a
               className="project-cta"
-              href="https://www.figma.com"
+              href="https://www.figma.com/design/bPH9Iw8WCGkhd2K7J13m7w/Harmoni?node-id=770-1244&t=Z7C3Bdw0wm5oO9OM-1"
               target="_blank"
               rel="noreferrer"
             >

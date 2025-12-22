@@ -7,13 +7,20 @@ const TrackStory = () => {
     <article className="about-panel about-panel--track">
       <div className="about-copy about-copy--left">
         <p className="about-body">
-          Ved siden av design og utvikling driver jeg aktivt med friidrett, der
-          jeg konkurrerer som sprinter. Idretten har gitt meg en sterk
-          forståelse for disiplin, målbevissthet og struktur, samt evnen til å
-          arbeide fokusert mot langsiktige mål. Som sprinter lærer man å
-          optimalisere detaljer, analysere prestasjon og jobbe strategisk for
-          kontinuerlig forbedring — verdier jeg tar med meg direkte inn i mine
-          prosjekter som interaksjonsdesigner.
+          Ved siden av design og utvikling satser jeg aktivt på friidrett og
+          konkurrerer som sprinter. Idretten har gitt meg en sterk forståelse
+          for struktur, målrettet arbeid og betydningen av kontinuerlig
+          forbedring.
+          <br /> <br />
+          Sprint handler om å analysere detaljer, teste justeringer og jobbe
+          systematisk mot små, målbare forbedringer over tid. Denne måten å
+          jobbe på tar jeg med meg direkte inn i UX- og interaksjonsdesign – der
+          innsikt, testing og iterasjon er avgjørende for å skape gode
+          løsninger.
+          <br /> <br />
+          Erfaringen fra toppidrett har også gjort meg komfortabel med tydelige
+          mål, tilbakemeldinger og høye krav, og jeg trives godt i miljøer der
+          man jobber fokusert sammen mot felles resultater.
         </p>
 
         <div className="about-meta">

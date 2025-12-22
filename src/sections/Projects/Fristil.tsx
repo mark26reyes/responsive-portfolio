@@ -75,8 +75,10 @@ export default function Fristil() {
             <div className="project-hero-text">
               <h1>Fristil</h1>
               <p>
-                Et kreativt prosjekt for visuelt frislipp med fokus på animasjon,
-                identitet og scenografi.
+                Dette bachelorprosjektet omfatter utvikling av en moderne,
+                responsiv nettside kombinert med en helhetlig rebranding, med
+                mål om å styrke oppdragsgiverens digitale tilstedeværelse og
+                merkevare.
               </p>
             </div>
             <div className="project-hero-logo">
@@ -104,9 +106,14 @@ export default function Fristil() {
           <section className="project-section project-reveal">
             <h2>Kort om prosjektet</h2>
             <p>
-              Fristil er et prosjekt som gir rom for kreativ utforskning og
-              visuell historiefortelling. Her ble uttrykk, farge og bevegelse
-              brukt for å skape en helhetlig identitet.
+              Prosjektet ble gjennomført som bacheloroppgave ved Høyskolen
+              Kristiania i samarbeid med ekstern oppdragsgiver. Oppgaven tok
+              utgangspunkt i behovet for en profesjonell og brukervennlig
+              digital plattform som tydelig kommuniserer selskapets tjenester,
+              artister og verdier. Arbeidet kombinerte strategisk design,
+              brukersentrert metodikk og teknisk utvikling, med kontinuerlig
+              dialog og iterasjon basert på tilbakemeldinger fra oppdragsgiver
+              og brukertesting.
             </p>
           </section>
 
@@ -115,13 +122,24 @@ export default function Fristil() {
           <section className="project-section project-reveal">
             <h2>Problem &amp; mål</h2>
             <p>
-              Hvordan kan vi skape et fleksibelt visuelt univers som lar idéer og
-              konsepter leve på tvers av flater og formater?
+              Hvordan kan en helhetlig rebranding og en brukersentrert nettside
+              styrke oppdragsgiverens digitale tilstedeværelse, tydeliggjøre
+              deres tjenester og bidra til økt synlighet, kontakt og
+              konkurransekraft i markedet?
             </p>
             <ul className="project-list">
-              <li>Skape en tydelig, men leken visuell identitet</li>
-              <li>Utforske animasjon og scenografi i digitale flater</li>
-              <li>Bygge et uttrykk som tåler variasjon</li>
+              <li>
+                Skape en profesjonell og konsistent visuell identitet som
+                reflekterer selskapets verdier
+              </li>
+              <li>
+                Utvikle en brukervennlig og responsiv nettside tilpasset ulike
+                enheter og målgrupper
+              </li>
+              <li>
+                BForenkle kommunikasjon mellom bedriften, artister og
+                potensielle kunder
+              </li>
             </ul>
           </section>
 
@@ -130,10 +148,17 @@ export default function Fristil() {
           <section className="project-section project-reveal">
             <h2>Min rolle</h2>
             <ul className="project-list">
-              <li>Konseptutvikling og moodboards</li>
-              <li>Visuell identitet og layout</li>
-              <li>Motion-prinsipper og animasjonsretning</li>
-              <li>Presentasjon og formidling</li>
+              <li>
+                UX/UI-design med ansvar for struktur, navigasjon og visuell
+                identitet
+              </li>
+              <li>Utvikling av wireframes og design i Figma</li>
+              <li>
+                Deltakelse i teknisk utvikling ved bruk av moderne webteknologi
+              </li>
+              <li>
+                Planlegging og gjennomføring av brukertesting og iterasjoner
+              </li>
             </ul>
           </section>
 
@@ -142,10 +167,19 @@ export default function Fristil() {
           <section className="project-section project-reveal">
             <h2>Designprosess</h2>
             <ul className="project-list">
-              <li>Fase 1: Research og visuell inspirasjon</li>
-              <li>Fase 2: Konseptutvikling og stilvalg</li>
-              <li>Fase 3: Produksjon av identitet og animasjoner</li>
-              <li>Fase 4: Samling og presentasjon av helhetlig uttrykk</li>
+              <li>
+                Fase 1: Kartlegging av oppdragsgivers behov, mål og marked
+              </li>
+              <li>
+                Fase 2: Informasjonsarkitektur, wireframes og rebrand-retning
+              </li>
+              <li>
+                Fase 3: Visuell identitet, UI-design og responsiv layout i Figma
+              </li>
+              <li>
+                Fase 4: Implementering, brukertesting og justeringer før
+                levering
+              </li>
             </ul>
           </section>
 
@@ -154,8 +188,13 @@ export default function Fristil() {
           <section className="project-section project-solution project-reveal">
             <h2>Løsning</h2>
             <p>
-              Fristil resulterte i et fleksibelt visuelt system med tydelig
-              signatur, som kan skaleres til både digitale og fysiske flater.
+              Resultatet ble en moderne og brukervennlig nettside som fungerer
+              som et digitalt showcase for oppdragsgiver. Løsningen presenterer
+              artister, tjenester og kontaktinformasjon på en tydelig og
+              profesjonell måte, og støttes av en helhetlig visuell identitet
+              med ny logo, fargepalett og typografi. Nettsiden er optimalisert
+              for både desktop og mobil, og fungerer som et sentralt verktøy for
+              synlighet, markedsføring og samarbeid.
             </p>
             <img src={fristilMockups} alt="Fristil mockups" />
           </section>
@@ -165,17 +204,26 @@ export default function Fristil() {
           <section className="project-section project-reveal">
             <h2>Viktige lærdommer</h2>
             <ul className="project-list">
-              <li>Et sterkt konsept gir frihet i visuell utfoldelse</li>
-              <li>Helhet i uttrykket skaper tydelig identitet</li>
-              <li>Eksperimentering gir nye idéer og løsninger</li>
+              <li>
+                Tett samarbeid med oppdragsgiver er avgjørende for å lykkes med
+                reelle prosjekter
+              </li>
+              <li>
+                Brukertesting gir verdifull innsikt også i B2B- og
+                showcase-orienterte løsninger
+              </li>
+              <li>
+                En tydelig visuell identitet styrker både brukeropplevelse og
+                merkevare
+              </li>
             </ul>
             <a
               className="project-cta"
-              href="https://www.figma.com"
+              href="https://www.fristilrecords.no/"
               target="_blank"
               rel="noreferrer"
             >
-              Se full prototype i Figma
+              Besøk nettsiden
             </a>
           </section>
         </div>

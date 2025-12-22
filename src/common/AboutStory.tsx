@@ -20,22 +20,28 @@ const AboutStory = () => {
 
       <div className="about-copy">
         <p className="about-body">
-          Mitt navn er Mark Daniel Reyes, og jeg er en 24 år gammel
-          UX/UI-designer med en forventet bachelorgrad i Interaktivt Design fra
-          Høyskolen Kristiania til sommer. Jeg har en lidenskap for å skape
-          intuitive og estetisk tiltalende digitale opplevelser som kombinerer
-          funksjonalitet og design.
+          Jeg heter Mark Daniel Reyes og er UX- og interaksjonsdesigner med
+          bachelor i Interaktivt Design fra Høyskolen Kristiania. Jeg designer
+          brukersentrerte digitale løsninger der struktur, interaksjon og
+          visuelt uttrykk jobber sammen for å løse reelle brukerbehov.
           <br /> <br />
-          Gjennom studiene mine har jeg fått en solid forståelse for
-          brukeropplevelse, interaksjonsdesign og visuell kommunikasjon. Jeg har
-          erfaring med verktøy som Figma, Adobe XD og andre designprogrammer, og
-          jeg jobber alltid med et brukerfokusert tankesett for å skape
-          løsninger som er både innovative og effektive.
+          Gjennom studier og prosjektarbeid har jeg jobbet metodisk med
+          UX-prosesser som brukerinnsikt, konseptutvikling,
+          informasjonsarkitektur, prototyping og brukertesting. I prosjektene
+          mine har jeg benyttet både Design Thinking og Lean UX, og er opptatt
+          av å ta designbeslutninger basert på innsikt og ikke antakelser.
           <br />
-          <br />I tillegg til UX/UI-design har jeg en sterk interesse for
-          webutvikling og ønsker å utvikle meg videre innen dette feltet. Jeg
-          har erfaring med HTML, CSS, JavaScript og TypeScript, og bygger opp
-          ferdighetene mine innenfor moderne rammeverk som React.
+          <br />
+          Jeg designer hovedsakelig i Figma og har også erfaring med å utvikle
+          løsningene jeg designer. Jeg jobber med HTML, CSS, JavaScript og
+          TypeScript, og har bygget grensesnitt i React. Dette gir meg en
+          praktisk forståelse for hvordan design fungerer i ferdige produkter,
+          og gjør det enklere å samarbeide tett med utviklere.
+          <br /> <br />
+          Som junior designer er jeg nysgjerrig, lærevillig og motivert for å
+          utvikle meg videre. Jeg trives best i team der jeg kan bidra aktivt,
+          ta ansvar og vokse gjennom samarbeid, tilbakemeldinger og reelle
+          utfordringer.
         </p>
       </div>
     </article>

@@ -20,15 +20,15 @@ const GolfStory = () => {
 
       <div className="about-copy">
         <p className="about-body">
-          Når tiden tillater det spiller jeg også golf, en hobby jeg har dyrket
-          de siste to årene. Golf gir meg et nødvendig avbrekk fra trening og
-          arbeid, men har også styrket egenskaper som presisjon, konsentrasjon
-          og tålmodighet. Jeg er en perfeksjonist på banen og jobber nøye med
-          teknikk og forbedring — noe som har bidratt til at jeg har senket
-          handicapet mitt betydelig på kort tid. Denne tilnærmingen til
-          kontinuerlig forbedring speiler også hvordan jeg jobber med design:
-          detaljorientert, analytisk og med et sterkt ønske om å levere
-          kvalitet.
+          Når tiden tillater det spiller jeg golf, en hobby jeg har hatt de
+          siste årene. Golf gir meg et verdifullt avbrekk fra trening og arbeid,
+          samtidig som det utfordrer ferdigheter som presisjon, konsentrasjon og
+          tålmodighet.
+          <br /> <br />I golf jobber man målrettet med små justeringer over tid
+          for å oppnå stabile resultater. Denne tilnærmingen, med fokus på
+          detaljer, analyse og kontinuerlig forbedring, speiler også hvordan jeg
+          jobber med design. Jeg er opptatt av kvalitet i det jeg leverer, og
+          trives med prosesser der grundighet og forbedring står sentralt.
         </p>
         <div className="about-meta">
           <span>hcp 10.8</span>

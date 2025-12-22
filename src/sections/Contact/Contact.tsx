@@ -8,10 +8,11 @@ export default function ContactSection() {
     <section id="contact" className="contact-section">
       <div className="contact-inner">
         <header className="contact-header">
-          <p className="contact-kicker">Ta kontakt!</p>
+          <p className="contact-kicker">Ta kontakt</p>
           <p className="contact-subheading">
-            Jeg tar gjerne en prat om nye samarbeid, idéer eller bare en kopp
-            kaffe. Bruk skjemaet eller ta kontakt direkte på e-post.
+            Jeg tar gjerne en prat om nye muligheter, samarbeid eller spennende
+            idéer. Du kan bruke kontaktskjemaet nedenfor, eller ta kontakt
+            direkte via e-post.
           </p>
         </header>
 

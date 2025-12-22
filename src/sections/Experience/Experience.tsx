@@ -30,7 +30,7 @@ const experiences: ExperienceItem[] = [
       "Ansvar for henting og oppakning av nye varer og visuell utstilling av produkter.",
     highlights: [
       "• Bygget sterk forståelse for kundebehov og forbedret kundeopplevelser",
-      "• Samarbeidet tett med teamet for å sikre inspirerende butikklokale",
+      "• Ansvar for visuell utforming av butikkens produkter.",
       "• Utviklet rutiner som sikret effektiv vareflyt og sesongmessige kampanjer",
     ],
   },
@@ -41,9 +41,9 @@ const experiences: ExperienceItem[] = [
     summary:
       "Arbeidet med sortering og logistikk av pakker, samt optimalisering av arbeidsflyt.",
     highlights: [
-      "• Ivaretok høy nøyaktighet og sporbarhet i logistikkprosesser",
-      "• Sikret at pakker ble levert i tide gjennom effektiv koordinering",
-      "• Bisto med forbedringer av interne rutiner for bedre effektivitet",
+      "• Ivaretok høy nøyaktighet og sporbarhet i logistikkprosesser.",
+      "• Sikret at pakker ble levert i tide gjennom effektiv koordinering.",
+      "• Bisto med forbedringer av interne rutiner for bedre effektivitet.",
     ],
   },
   {
@@ -51,11 +51,11 @@ const experiences: ExperienceItem[] = [
     company: "Elkjøp Fornebu",
     period: "Juli 2024 – nåværende",
     summary:
-      "Håndterer kundehenvendelser og support med fokus på brukervennlige løsninger.",
+      "Håndterer kundehenvendelser i support med fokus på brukerbehov og effektiv problemløsning.",
     highlights: [
-      "• Løser flere saker samtidig med høyt kvalitetsnivå i kundebehandlingen",
-      "• Bidrar til positiv kundeopplevelse i krevende situasjoner",
-      "• Samarbeider med salgsteam for å identifisere forbedringsområder",
+      "• Løser flere saker samtidig med høyt kvalitetsnivå i kundebehandlingen.",
+      "• Bidrar til positiv kundeopplevelse i krevende situasjoner.",
+      "• Samarbeider med salgsteam for å identifisere brukerbehov og anbefale løsninger.",
     ],
   },
 ];
@@ -91,12 +91,20 @@ export default function ExperienceSection() {
     <section id="experience" className="experience-section">
       <div className="experience-inner">
         <header className="experience-header">
-          <h2 className="experience-title">Min erfaring</h2>
+          <h2 className="experience-title">Erfaring</h2>
           <p className="experience-intro">
-            Gjennom de få årene jeg har jobbet med interaksjonsdesign og
-            brukertesting har jeg opparbeidet meg bred erfaring. Min bakgrunn
-            spenner fra butikkdrift og logistikk til serviceyrket – erfaring jeg
-            tar med meg inn i digitale produkter.
+            Gjennom studier og praktisk arbeid har jeg opparbeidet meg relevant
+            erfaring innen interaksjonsdesign, brukertesting og brukernær
+            problemløsning. Jeg har i tillegg bakgrunn fra service- og
+            butikkarbeid, som har gitt meg verdifull innsikt i brukerbehov,
+            kommunikasjon og arbeid i høyt tempo.
+            <br />
+            <br />
+            Erfaringen fra kundevendte roller har styrket min forståelse for
+            ulike brukere, tydelig formidling og viktigheten av gode løsninger i
+            praksis. Dette tar jeg med meg inn i designarbeidet, der jeg er
+            opptatt av å skape digitale produkter som er intuitive,
+            tilgjengelige og faktisk fungerer for menneskene som bruker dem.
           </p>
         </header>
 

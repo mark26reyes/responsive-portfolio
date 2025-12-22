@@ -75,8 +75,10 @@ export default function OneHub() {
             <div className="project-hero-text">
               <h1>OneHub</h1>
               <p>
-                Et system som samler informasjon fra ulike apper og gir en
-                sømløs opplevelse for intern kommunikasjon og samarbeid.
+                OneHub er et konsept for en mobilapp som forenkler hvordan
+                brukere oppdager filmer og serier på tvers av flere
+                strømmetjenester, ved å kombinere tradisjonell strømming med
+                mekanikker fra sosiale medier.
               </p>
             </div>
             <div className="project-hero-logo">
@@ -91,7 +93,7 @@ export default function OneHub() {
               <span>Rolle:</span> UX/UI Designer
             </p>
             <p>
-              <span>Varighet:</span> 6 uker
+              <span>Varighet:</span> 8 uker
             </p>
             <p>
               <span>Team:</span> Tverrfaglig gruppe
@@ -104,10 +106,13 @@ export default function OneHub() {
           <section className="project-section project-reveal">
             <h2>Kort om prosjektet</h2>
             <p>
-              OneHub ble utviklet for å redusere informasjonskaos i organisasjoner
-              ved å samle kommunikasjon, dokumenter og oppgaver i én plattform.
-              Prosjektet fokuserte på struktur, informasjonsflyt og enkel
-              navigasjon.
+              Prosjektet ble utviklet som en del av emnet Innovasjon og
+              prototyping ved Høyskolen Kristiania. Målet var å utforske nye
+              måter å redusere beslutningsutmattelse og forbedre
+              innholdsoppdagelse i et fragmentert strømmemarked. Løsningen
+              bygger på brukersentrert design, iterativ prototyping og
+              brukertesting, med særlig fokus på visuell utforskning og
+              personlig tilpasning.
             </p>
           </section>
 
@@ -116,14 +121,24 @@ export default function OneHub() {
           <section className="project-section project-reveal">
             <h2>Problem &amp; mål</h2>
             <p>
-              Hvordan kan vi gi ansatte én samlet arbeidsflate som gjør det
-              enklere å finne viktig informasjon, holde oversikt og samarbeide
-              uten å hoppe mellom mange systemer?
+              Hvordan kan vi gjøre oppdagelsen av filmer og serier på tvers av
+              flere strømmetjenester mer intuitiv, engasjerende og mindre
+              tidkrevende for brukere som opplever valgoverflod og
+              beslutningsutmattelse?
             </p>
             <ul className="project-list">
-              <li>Samle kommunikasjon og ressurser i én tydelig struktur</li>
-              <li>Forenkle samarbeid og redusere informasjonsstøy</li>
-              <li>Skape en intuitiv opplevelse for hele organisasjonen</li>
+              <li>
+                Forenkle oppdagelse av nytt innhold gjennom et visuelt og
+                intuitivt grensesnitt
+              </li>
+              <li>
+                Redusere kognitiv belastning ved å samle innhold fra flere
+                strømmetjenester på ett sted
+              </li>
+              <li>
+                SSkape en mer engasjerende og personlig opplevelse ved hjelp av
+                algoritmiske anbefalinger og sosiale elementer
+              </li>
             </ul>
           </section>
 
@@ -132,10 +147,14 @@ export default function OneHub() {
           <section className="project-section project-reveal">
             <h2>Min rolle</h2>
             <ul className="project-list">
-              <li>Brukerinnsikt og behovskartlegging</li>
-              <li>Strukturering av informasjonsarkitektur</li>
-              <li>Wireframes og visuelle konsepter</li>
-              <li>Interaktiv prototyping og brukertesting</li>
+              <li>
+                Innsiktsarbeid gjennom spørreundersøkelser og brukerintervjuer
+              </li>
+              <li>
+                Konseptutvikling og idéutforskning basert på Design Thinking
+              </li>
+              <li>Interaksjonsdesign og prototyping i Figma</li>
+              <li>Planlegging, gjennomføring og analyse av brukertester</li>
             </ul>
           </section>
 
@@ -144,10 +163,22 @@ export default function OneHub() {
           <section className="project-section project-reveal">
             <h2>Designprosess</h2>
             <ul className="project-list">
-              <li>Fase 1: Innsikt, intervjuer og kartlegging av arbeidsflyt</li>
-              <li>Fase 2: Konseptutvikling og strukturering av innhold</li>
-              <li>Fase 3: Iterativ prototyping og design av dashboard</li>
-              <li>Fase 4: Brukertesting og justeringer</li>
+              <li>
+                Fase 1: Kartlegging av brukerbehov, frustrasjoner og marked
+                gjennom undersøkelser, intervjuer og konkurranseanalyse
+              </li>
+              <li>
+                Fase 2: Utforsking av konsepter inspirert av sosiale medier og
+                streamingtjenester
+              </li>
+              <li>
+                Fase 3: Utvikling av en klikkbar MVP med rullbar trailer-feed og
+                personaliserte anbefalinger
+              </li>
+              <li>
+                Fase 4: Brukertesting med representative brukere og
+                kontinuerlige forbedringer basert på funn
+              </li>
             </ul>
           </section>
 
@@ -156,9 +187,13 @@ export default function OneHub() {
           <section className="project-section project-solution project-reveal">
             <h2>Løsning</h2>
             <p>
-              OneHub gir et samlet oversiktsbilde med rask tilgang til viktige
-              kanaler, dokumenter og oppgaver, slik at intern kommunikasjon blir
-              mer effektiv og tilgjengelig.
+              OneHub samler innhold fra ulike strømmetjenester i én felles
+              plattform og presenterer det i en rullbar, visuell trailer-feed
+              inspirert av sosiale medier. Brukere får personlige anbefalinger
+              basert på preferanser og tidligere interaksjoner, samt tilgang til
+              vurderinger, søk, filtrering og mulighet for sosial deling, alt
+              designet for å gjøre innholdsoppdagelse raskere og mer
+              engasjerende.
             </p>
             <img src={oneHubMockups} alt="OneHub mockups" />
           </section>
@@ -168,13 +203,22 @@ export default function OneHub() {
           <section className="project-section project-reveal">
             <h2>Viktige lærdommer</h2>
             <ul className="project-list">
-              <li>Struktur og prioritering gjør komplekse systemer enklere</li>
-              <li>Godt samarbeid gir raskere fremdrift og bedre løsninger</li>
-              <li>Brukertesting avdekker friksjon tidlig</li>
+              <li>
+                Brukertesting tidlig i prosessen avdekker kritiske
+                forbedringsområder som ellers er lette å overse
+              </li>
+              <li>
+                Reduksjon av kognitiv belastning er avgjørende for god
+                brukeropplevelse i komplekse informasjonsmiljøer
+              </li>
+              <li>
+                Iterativ prototyping gir bedre beslutningsgrunnlag enn å låse
+                seg til én idé for tidlig
+              </li>
             </ul>
             <a
               className="project-cta"
-              href="https://www.figma.com"
+              href="https://www.figma.com/design/p4JxnaeXfreYq8qZu8DCTJ/OneHub?node-id=0-1&t=KMDFSkrS3MELiQUR-1"
               target="_blank"
               rel="noreferrer"
             >
