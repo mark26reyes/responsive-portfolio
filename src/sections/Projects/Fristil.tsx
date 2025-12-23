@@ -75,10 +75,10 @@ export default function Fristil() {
             <div className="project-hero-text">
               <h1>Fristil</h1>
               <p>
-                Dette bachelorprosjektet omfatter utvikling av en moderne,
-                responsiv nettside kombinert med en helhetlig rebranding, med
-                mål om å styrke oppdragsgiverens digitale tilstedeværelse og
-                merkevare.
+                Fristil Records er et bachelorprosjekt der målet var å utvikle
+                en moderne og brukervennlig nettside som styrker plateselskapets
+                digitale tilstedeværelse og fungerer som et tydelig showcase for
+                artister og tjenester.
               </p>
             </div>
             <div className="project-hero-logo">
@@ -90,16 +90,18 @@ export default function Fristil() {
 
           <div className="project-meta">
             <p>
-              <span>Rolle:</span> Visuell designer
+              <span>Rolle:</span> UX/UI Designer
             </p>
             <p>
-              <span>Varighet:</span> 4 uker
+              <span>Varighet:</span> 12 uker (vår 2025)
             </p>
             <p>
-              <span>Team:</span> Kreativt samarbeid
+              <span>Team:</span> Tverrfaglig gruppe (3 personer) i samarbeid med
+              oppdragsgiver
             </p>
             <p>
-              <span>Verktøy:</span> Adobe CC, Figma
+              <span>Verktøy:</span> Figma, Wix Studio, Trello (Kanban), Google
+              Skjemaer
             </p>
           </div>
 
@@ -107,13 +109,12 @@ export default function Fristil() {
             <h2>Kort om prosjektet</h2>
             <p>
               Prosjektet ble gjennomført som bacheloroppgave ved Høyskolen
-              Kristiania i samarbeid med ekstern oppdragsgiver. Oppgaven tok
-              utgangspunkt i behovet for en profesjonell og brukervennlig
-              digital plattform som tydelig kommuniserer selskapets tjenester,
-              artister og verdier. Arbeidet kombinerte strategisk design,
-              brukersentrert metodikk og teknisk utvikling, med kontinuerlig
-              dialog og iterasjon basert på tilbakemeldinger fra oppdragsgiver
-              og brukertesting.
+              Kristiania i samarbeid med Fristil Records AS. Løsningen skulle
+              ikke fungere som en salgstrakt, men som en digital plattform for
+              synlighet, merkevarebygging og enkel kontakt. Arbeidet var
+              forankret i Lean UX, brukertesting og tett dialog med
+              oppdragsgiver, og fokuserte på struktur, tydelig kommunikasjon og
+              estetisk uttrykk tilpasset en ung målgruppe.
             </p>
           </section>
 
@@ -122,23 +123,23 @@ export default function Fristil() {
           <section className="project-section project-reveal">
             <h2>Problem &amp; mål</h2>
             <p>
-              Hvordan kan en helhetlig rebranding og en brukersentrert nettside
-              styrke oppdragsgiverens digitale tilstedeværelse, tydeliggjøre
-              deres tjenester og bidra til økt synlighet, kontakt og
-              konkurransekraft i markedet?
+              Hvordan kan Fristil Records styrke sin digitale identitet gjennom
+              en brukersentrert nettside som tydelig presenterer artister og
+              tjenester, og samtidig oppleves relevant, moderne og enkel å bruke
+              for målgruppen?
             </p>
             <ul className="project-list">
               <li>
-                Skape en profesjonell og konsistent visuell identitet som
-                reflekterer selskapets verdier
+                Skape et profesjonelt og visuelt helhetlig digitalt uttrykk som
+                reflekterer Fristil Records sin identitet
               </li>
               <li>
-                Utvikle en brukervennlig og responsiv nettside tilpasset ulike
-                enheter og målgrupper
+                Presentere artister og tjenester på en oversiktlig og
+                engasjerende måte
               </li>
               <li>
-                BForenkle kommunikasjon mellom bedriften, artister og
-                potensielle kunder
+                Tilrettelegge for enkel kontakt uten å bygge en tradisjonell
+                salgstrakt
               </li>
             </ul>
           </section>
@@ -149,16 +150,13 @@ export default function Fristil() {
             <h2>Min rolle</h2>
             <ul className="project-list">
               <li>
-                UX/UI-design med ansvar for struktur, navigasjon og visuell
-                identitet
+                UX/UI-design med ansvar for struktur, navigasjon og visuelt
+                uttrykk
               </li>
-              <li>Utvikling av wireframes og design i Figma</li>
-              <li>
-                Deltakelse i teknisk utvikling ved bruk av moderne webteknologi
-              </li>
-              <li>
-                Planlegging og gjennomføring av brukertesting og iterasjoner
-              </li>
+              <li>Innsiktsarbeid og brukertesting rettet mot målgruppen</li>
+              <li>Prototyping og ferdig design i Figma</li>
+              <li>Bidrag til planlegging og fremdrift gjennom Kanban</li>
+              <li>Ferdig løsning i WIX Studio</li>
             </ul>
           </section>
 
@@ -168,17 +166,20 @@ export default function Fristil() {
             <h2>Designprosess</h2>
             <ul className="project-list">
               <li>
-                Fase 1: Kartlegging av oppdragsgivers behov, mål og marked
+                Fase 1: Kartlegging av målgruppe, behov og forventninger gjennom
+                innsiktsarbeid
               </li>
               <li>
-                Fase 2: Informasjonsarkitektur, wireframes og rebrand-retning
+                Fase 2: Informasjonsarkitektur og innholdsstruktur tilpasset et
+                digitalt showcase
               </li>
               <li>
-                Fase 3: Visuell identitet, UI-design og responsiv layout i Figma
+                Fase 3: Utvikling av visuell retning og interaktiv prototype i
+                Figma
               </li>
               <li>
-                Fase 4: Implementering, brukertesting og justeringer før
-                levering
+                Fase 4: Brukertesting og forbedringer basert på tilbakemeldinger
+                fra brukere og oppdragsgiver
               </li>
             </ul>
           </section>
@@ -188,13 +189,12 @@ export default function Fristil() {
           <section className="project-section project-solution project-reveal">
             <h2>Løsning</h2>
             <p>
-              Resultatet ble en moderne og brukervennlig nettside som fungerer
-              som et digitalt showcase for oppdragsgiver. Løsningen presenterer
-              artister, tjenester og kontaktinformasjon på en tydelig og
-              profesjonell måte, og støttes av en helhetlig visuell identitet
-              med ny logo, fargepalett og typografi. Nettsiden er optimalisert
-              for både desktop og mobil, og fungerer som et sentralt verktøy for
-              synlighet, markedsføring og samarbeid.
+              Resultatet ble en moderne og responsiv nettside utviklet i Wix
+              Studio, med tydelig fokus på artister, visuell identitet og enkel
+              navigasjon. Nettsiden fungerer som et digitalt utstillingsvindu
+              for Fristil Records, hvor innhold, estetikk og struktur jobber
+              sammen for å bygge merkevare og senke terskelen for kontakt og
+              samarbeid.
             </p>
             <img src={fristilMockups} alt="Fristil mockups" />
           </section>
@@ -205,16 +205,16 @@ export default function Fristil() {
             <h2>Viktige lærdommer</h2>
             <ul className="project-list">
               <li>
-                Tett samarbeid med oppdragsgiver er avgjørende for å lykkes med
-                reelle prosjekter
+                Tydelig avgrensning av formål er avgjørende når løsningen ikke
+                skal være salgsdrevet
               </li>
               <li>
-                Brukertesting gir verdifull innsikt også i B2B- og
-                showcase-orienterte løsninger
+                Brukertesting gir verdifull innsikt også i prosjekter med
+                hovedfokus på visuell identitet
               </li>
               <li>
-                En tydelig visuell identitet styrker både brukeropplevelse og
-                merkevare
+                Struktur og innhold er like viktig som estetikk for å skape en
+                god helhetsopplevelse
               </li>
             </ul>
             <a

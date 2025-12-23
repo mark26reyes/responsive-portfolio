@@ -136,7 +136,7 @@ export default function OneHub() {
                 strømmetjenester på ett sted
               </li>
               <li>
-                SSkape en mer engasjerende og personlig opplevelse ved hjelp av
+                Skape en mer engasjerende og personlig opplevelse ved hjelp av
                 algoritmiske anbefalinger og sosiale elementer
               </li>
             </ul>
