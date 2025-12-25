@@ -92,7 +92,7 @@ export default function ProjectsSection() {
       <div className="projects-bg" aria-hidden="true" />
       <div className="projects-inner">
         <header className="projects-header">
-          <h1 className="projects-eyebrow">Utvalgte prosjekter</h1>
+          <h2 className="projects-eyebrow">Utvalgte prosjekter</h2>
           <p className="projects-intro">
             <b>Fra ide til brukeropplevelsen. </b>Her finner du et utvalg
             prosjekter der jeg har jobbet med UX- og interaksjonsdesign fra

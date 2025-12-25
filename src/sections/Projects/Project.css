@@ -31,7 +31,7 @@
 
 .projects-eyebrow {
   font-family: var(--font-heading, "PP Editorial New", serif);
-  font-size: 4rem;
+  font-size: clamp(3rem, 6vw, 4.5rem);
   margin-bottom: 1rem;
   color: #4c4c3c;
   font-weight: lighter;
@@ -147,9 +147,5 @@
 
   .projects-list {
     gap: 4rem;
-  }
-
-  .projects-eyebrow {
-    font-size: 3.5rem;
   }
 }
