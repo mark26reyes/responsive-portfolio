@@ -133,7 +133,7 @@
 @media (max-width: 900px) {
   .project-item {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0rem;
   }
 
   .project-item.reverse {
@@ -141,12 +141,20 @@
   }
 
   .project-logo {
-    order: 3;
+    order: 1;
     justify-content: center;
   }
 
+  .project-text {
+    order: 2;
+  }
+
+  .project-text h3 {
+    display: none;
+  }
+
   .projects-list {
-    gap: 4rem;
+    gap: 5rem;
   }
 
   .projects-header {
