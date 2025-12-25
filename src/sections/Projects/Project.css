@@ -148,4 +148,8 @@
   .projects-list {
     gap: 4rem;
   }
+
+  .projects-header {
+    margin-top: -2rem;
+  }
 }
