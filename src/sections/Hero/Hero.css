@@ -7,7 +7,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding: 6rem 1rem 4vh;
+  padding: 6rem 1rem 0;
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.35),
@@ -23,23 +23,27 @@
 
 .hero-content {
   z-index: 1;
+  margin-bottom: 0vh;
+}
+
+.hero-title,
+.hero-subtitle,
+.hero-scrolltitle {
+  font-weight: 200;
 }
 
 .hero-title {
-  font-size: clamp(3rem, 6vw, 5rem);
-  font-weight: 200;
-  margin-bottom: 1rem;
+  font-size: clamp(5rem, 8vw, 7rem);
+  margin-bottom: 0.5rem;
 }
 
 .hero-subtitle {
   font-size: clamp(1rem, 2vw, 1.25rem);
-  font-weight: 200;
 }
 
 .hero-scrolltitle {
-  font-size: clamp(0.9rem, 1vw, 1rem);
-  font-weight: 200;
-  margin-top: 7rem;
+  font-size: clamp(3rem, 4.5vw, 3.75rem);
+  margin-top: 2rem;
   animation: scrollBlink 2s ease-in-out infinite;
 }
 

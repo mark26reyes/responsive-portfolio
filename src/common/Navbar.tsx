@@ -1,6 +1,5 @@
 import { useEffect, useState, type MouseEvent } from "react";
 import mdrLogo from "../assets/MDR.png";
-import homeIcon from "../assets/home-icon.png";
 
 const navLinks = [
   { href: "#about", label: "Om meg" },
@@ -21,7 +20,10 @@ const Navbar: React.FC<NavbarProps> = ({ basePath = "", forceBackground }) => {
   const closeMenu = () => setIsOpen(false);
   const isProjectNav = basePath.length > 0;
 
-  const handleNavClick = (event: MouseEvent<HTMLAnchorElement>, hash: string) => {
+  const handleNavClick = (
+    event: MouseEvent<HTMLAnchorElement>,
+    hash: string
+  ) => {
     if (!isProjectNav) return;
     event.preventDefault();
     window.location.hash = hash;
@@ -57,7 +59,7 @@ const Navbar: React.FC<NavbarProps> = ({ basePath = "", forceBackground }) => {
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-8xl items-center justify-between text-white font-light">
+      <div className="relative mx-auto flex max-w-8xl items-center justify-between text-white font-light">
         {/* Logo */}
         <a
           href={`${basePath}#hero`}
@@ -72,22 +74,8 @@ const Navbar: React.FC<NavbarProps> = ({ basePath = "", forceBackground }) => {
         </a>
 
         {/* Desktop / tablet nav */}
-        <div className="hidden md:flex items-center gap-10 rounded-full bg-black/60 px-6 py-3">
-          <a
-            href={`${basePath}#hero`}
-            className="flex h-10 w-10 items-center justify-center transition-colors hover:opacity-70"
-            onClick={(event) => {
-              handleNavClick(event, "#hero");
-              if (!isProjectNav) closeMenu();
-            }}
-            aria-label="Hjem"
-          >
-            <span className="text-xl leading-none">
-              <img src={homeIcon} alt="" />
-            </span>
-          </a>
-
-          <div className="flex items-center gap-8 text-base tracking-wide">
+        <div className="hidden md:flex items-center gap-10 rounded-full bg-black/60 px-6 py-3 md:absolute md:left-1/2 md:-translate-x-1/2">
+          <div className="flex items-center gap-16 text-base tracking-wide">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -104,11 +92,11 @@ const Navbar: React.FC<NavbarProps> = ({ basePath = "", forceBackground }) => {
           </div>
         </div>
 
-        {/* Desktop CTA */}
-        <div className="hidden md:flex">
+        {/* Floating CTA */}
+        <div className="fixed bottom-8 right-8 z-50 hidden md:flex">
           <a
             href={`${basePath}#contact`}
-            className="inline-flex items-center rounded-full border border-white/80 px-5 py-2 text-sm tracking-wide transition bg-black/50 hover:bg-black/70 text-white font-light"
+            className="inline-flex items-center rounded-full border border-white/70 bg-black/70 px-6 py-3 text-sm tracking-wide text-white shadow-lg backdrop-blur transition hover:-translate-y-0.5 hover:bg-black/85"
             onClick={(event) => {
               handleNavClick(event, "#contact");
               if (!isProjectNav) closeMenu();
@@ -159,16 +147,6 @@ const Navbar: React.FC<NavbarProps> = ({ basePath = "", forceBackground }) => {
             Lukk
           </button>
 
-          <a
-            href={`${basePath}#hero`}
-            onClick={(event) => {
-              handleNavClick(event, "#hero");
-              if (!isProjectNav) closeMenu();
-            }}
-            className="text-2xl tracking-wide hover:opacity-70"
-          >
-            Hjem
-          </a>
           {navLinks.map((link) => (
             <a
               key={link.href}
