@@ -69,6 +69,11 @@
   margin-inline: auto;
   text-align: center;
 }
+
+.project-hero-text {
+  display: grid;
+  justify-items: center;
+}
 .project-cta--hero {
   margin-top: 1.4rem;
   margin-bottom: 1.4rem;
@@ -244,11 +249,27 @@
   align-items: start;
 }
 
+.project-step-grid--wide {
+  grid-template-columns: 1fr;
+}
+
+.project-step-grid--aside {
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  align-items: start;
+}
+
 .project-step-grid h4 {
   font-size: 1.15rem;
   margin: 0 0 0.6rem;
   color: #4c4c3c;
   font-weight: 600;
+}
+
+.project-inline-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
 }
 
 .project-step-grid p {
@@ -295,6 +316,22 @@
 .project-ui .project-step-images {
   margin-top: 2rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-ui .project-step-images img {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.project-ui .project-ui-palette {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 1.5rem;
 }
 
 .project-conclusion {
@@ -454,17 +491,90 @@
     padding: 150px 20px 80px;
   }
 
+  .project-section,
+  .project-intro,
+  .project-problem,
+  .project-design,
+  .project-solution-detail,
+  .project-ui,
+  .project-conclusion {
+    text-align: center;
+  }
+
+  .project-section h2,
+  .project-section p,
+  .project-meta--intro,
+  .project-meta--intro p,
+  .project-problem h2,
+  .project-problem p,
+  .project-problem .project-list,
+  .project-design h2,
+  .project-design p,
+  .project-step h3,
+  .project-step-grid h4,
+  .project-step-grid p,
+  .project-solution-detail h2,
+  .project-solution-detail h4,
+  .project-solution-detail p,
+  .project-solution-detail .project-list,
+  .project-ui h2,
+  .project-ui h4,
+  .project-ui p,
+  .project-conclusion h2,
+  .project-conclusion h4,
+  .project-conclusion p {
+    text-align: center;
+  }
+
+  .project-meta--intro {
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-meta--intro p:nth-child(even)::before {
+    content: "";
+    margin-right: 0;
+  }
+
+  .project-problem .project-list,
+  .project-solution-detail .project-list {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 520px;
+  }
+
+  .project-step-grid {
+    justify-items: center;
+  }
+
+  .project-step-grid--aside {
+    grid-template-columns: 1fr;
+  }
+
+  .project-ui .project-step-images {
+    grid-template-columns: 1fr;
+    max-width: 640px;
+  }
+
+  .project-ui .project-ui-palette {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-conclusion-result {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .project-meta {
     grid-template-columns: 1fr;
   }
 
   .project-meta--intro {
     grid-template-columns: 1fr;
-  }
-
-  .project-meta--intro p:nth-child(even)::before {
-    content: "";
-    margin-right: 0;
   }
 
   .project-divider {
