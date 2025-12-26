@@ -21,27 +21,26 @@ const AboutStory = () => {
       <div className="about-copy">
         <p className="about-body">
           Jeg heter Mark Daniel Reyes og er UX- og interaksjonsdesigner med
-          bachelor i Interaktivt Design fra Høyskolen Kristiania. Jeg designer
+          bachelor i Interaktivt design fra Høyskolen Kristiania. Jeg designer
           brukersentrerte digitale løsninger der struktur, interaksjon og
           visuelt uttrykk jobber sammen for å løse reelle brukerbehov.
           <br /> <br />
           Gjennom studier og prosjektarbeid har jeg jobbet metodisk med
           UX-prosesser som brukerinnsikt, konseptutvikling,
-          informasjonsarkitektur, prototyping og brukertesting. I prosjektene
-          mine har jeg benyttet både Design Thinking og Lean UX, og er opptatt
-          av å ta designbeslutninger basert på innsikt og ikke antakelser.
+          informasjonsarkitektur, prototyping og brukertesting. Jeg har benyttet
+          både Design Thinking og Lean UX, og er opptatt av å ta
+          designbeslutninger basert på innsikt fremfor antakelser.
           <br />
           <br />
-          Jeg designer hovedsakelig i Figma og har også erfaring med å utvikle
-          løsningene jeg designer. Jeg jobber med HTML, CSS, JavaScript og
-          TypeScript, og har bygget grensesnitt i React. Dette gir meg en
-          praktisk forståelse for hvordan design fungerer i ferdige produkter,
-          og gjør det enklere å samarbeide tett med utviklere.
+          Jeg designer hovedsakelig i Figma og har også erfaring med
+          front-end-utvikling i HTML, CSS, JavaScript og TypeScript, samt
+          bygging av grensesnitt i React. Dette gir meg en praktisk forståelse
+          for hvordan design fungerer i ferdige produkter og gjør samarbeidet
+          med utviklere mer effektivt.
           <br /> <br />
           Som junior designer er jeg nysgjerrig, lærevillig og motivert for å
-          utvikle meg videre. Jeg trives best i team der jeg kan bidra aktivt,
-          ta ansvar og vokse gjennom samarbeid, tilbakemeldinger og reelle
-          utfordringer.
+          utvikle meg videre. Jeg trives i team der jeg kan bidra aktivt, ta
+          ansvar og vokse gjennom samarbeid og tilbakemeldinger.
         </p>
       </div>
     </article>
