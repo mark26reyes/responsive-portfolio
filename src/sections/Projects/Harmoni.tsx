@@ -97,7 +97,7 @@ export default function Harmoni() {
           <div className="project-divider" aria-hidden="true" />
 
           <section className="project-section project-intro project-reveal">
-            <h2>Kort om prosjektet</h2>
+            <h3 className="project-section-title">Kort om prosjektet</h3>
             <p>
               Prosjektet ble utviklet som en semesteroppgave i emnet
               Designprosjekt ved Høyskolen Kristiania. Målet var å utforske
@@ -113,7 +113,7 @@ export default function Harmoni() {
                 <span>Rolle:</span> UX/UI Designer
               </p>
               <p>
-                <span>Varighet:</span> 8 uker
+                <span>Varighet:</span> Aug 2024 - Des 2024
               </p>
               <p>
                 <span>Team:</span> Tverrfaglig gruppe
@@ -134,7 +134,7 @@ export default function Harmoni() {
           <div className="project-divider" aria-hidden="true" />
 
           <section className="project-section project-problem project-reveal">
-            <h2>Problem &amp; mål</h2>
+            <h3 className="project-section-title">Problem &amp; mål</h3>
             <p>
               Hvordan kan en digital løsning støtte unge voksne med mild til
               moderat psykisk ubehag, redusere stigma rundt psykisk helse og
@@ -159,7 +159,7 @@ export default function Harmoni() {
           <div className="project-divider" aria-hidden="true" />
 
           <section className="project-section project-design project-reveal">
-            <h2>Designprosess</h2>
+            <h3 className="project-section-title">Designprosess</h3>
             <p>
               Harmoni ble utviklet gjennom en iterativ og brukersentrert
               designprosess med fokus på psykisk helse, universell utforming og
@@ -323,7 +323,7 @@ export default function Harmoni() {
           <div className="project-divider" aria-hidden="true" />
 
           <section className="project-section project-solution-detail project-reveal">
-            <h2>5. Løsning</h2>
+            <h3 className="project-section-title">5. Løsning</h3>
             <div className="project-step-grid">
               <div>
                 <h4>Kjernefunksjoner</h4>
@@ -367,7 +367,7 @@ export default function Harmoni() {
           <div className="project-divider" aria-hidden="true" />
 
           <section className="project-section project-ui project-reveal">
-            <h2>6. UI</h2>
+            <h3 className="project-section-title">6. UI</h3>
             <div className="project-step-grid">
               <div>
                 <h4>Visuell trygghet</h4>
@@ -404,7 +404,7 @@ export default function Harmoni() {
           <div className="project-divider" aria-hidden="true" />
 
           <section className="project-section project-conclusion project-reveal">
-            <h2>Refleksjon</h2>
+            <h3 className="project-section-title">Konklusjon og resultater</h3>
             <div className="project-step-grid">
               <div>
                 <h4>Konklusjon</h4>

@@ -99,7 +99,7 @@ export default function MatSpar() {
           <div className="project-divider" aria-hidden="true" />
 
           <section className="project-section project-intro project-reveal">
-            <h2>Kort om prosjektet</h2>
+            <h3 className="project-section-title">Kort om prosjektet</h3>
             <p>
               MatSpar ble utviklet som et gruppeprosjekt, med mål om å lage en
               app for studenter og familier som ønsker bedre kontroll over
@@ -132,7 +132,7 @@ export default function MatSpar() {
           <div className="project-divider" aria-hidden="true" />
 
           <section className="project-section project-problem project-reveal">
-            <h2>Problem &amp; mål</h2>
+            <h3 className="project-section-title">Problem &amp; mål</h3>
             <p>
               Hvordan kan studenter og familier få bedre oversikt over
               måltidsplanlegging og matinnkjøp, slik at de kan redusere matsvinn
@@ -149,7 +149,7 @@ export default function MatSpar() {
           <div className="project-divider" aria-hidden="true" />
 
           <section className="project-section project-design project-reveal">
-            <h2>Designprosess</h2>
+            <h3 className="project-section-title">Designprosess</h3>
             <p>
               Designprosessen for MatSpar startet med en grundig forståelse av
               brukernes behov og utfordringer knyttet til måltidsplanlegging. Vi
@@ -163,8 +163,8 @@ export default function MatSpar() {
                 <div>
                   <h4>Målgruppe og antakelser</h4>
                   <p>
-                    Vi startet med å segmentere målgruppen for MatSpar og
-                    skrive ned våre antakelser om dette kundesegmentet.
+                    Vi startet med å segmentere målgruppen for MatSpar og skrive
+                    ned våre antakelser om dette kundesegmentet.
                   </p>
                   <p>
                     Målgruppen inkluderer personer som ønsker å redusere
@@ -191,7 +191,10 @@ export default function MatSpar() {
               </div>
             </div>
 
-            <div className="project-divider project-reveal" aria-hidden="true" />
+            <div
+              className="project-divider project-reveal"
+              aria-hidden="true"
+            />
 
             <div className="project-step project-reveal">
               <h3>2. Idégenerering og konseptutvikling</h3>
@@ -215,16 +218,16 @@ export default function MatSpar() {
                   <h4>Wireframes</h4>
                   <p>
                     For å visualisere konseptene utviklet vi low-fidelity
-                    wireframes og brukerflytdiagrammer i Figma. Dette gjorde
-                    det mulig å teste informasjonsarkitektur og
-                    navigasjonsflyt tidlig, før vi brukte tid på detaljert
-                    design. Vi la vekt på et intuitivt hovedmeny-oppsett, der
-                    brukeren enkelt kan bevege seg mellom måltidsplanlegging,
-                    handlelister og budsjettoversikt. Wireframene hjalp oss med
-                    å avdekke forbedringsområder på et tidlig stadium, som
-                    plasseringen av sentrale funksjoner og hvordan brukeren
-                    naturlig beveger seg gjennom appen. Gjennom flere
-                    iterasjoner fikk vi et solid grunnlag for videre utvikling.
+                    wireframes og brukerflytdiagrammer i Figma. Dette gjorde det
+                    mulig å teste informasjonsarkitektur og navigasjonsflyt
+                    tidlig, før vi brukte tid på detaljert design. Vi la vekt på
+                    et intuitivt hovedmeny-oppsett, der brukeren enkelt kan
+                    bevege seg mellom måltidsplanlegging, handlelister og
+                    budsjettoversikt. Wireframene hjalp oss med å avdekke
+                    forbedringsområder på et tidlig stadium, som plasseringen av
+                    sentrale funksjoner og hvordan brukeren naturlig beveger seg
+                    gjennom appen. Gjennom flere iterasjoner fikk vi et solid
+                    grunnlag for videre utvikling.
                   </p>
                 </div>
               </div>
@@ -234,7 +237,10 @@ export default function MatSpar() {
               </div>
             </div>
 
-            <div className="project-divider project-reveal" aria-hidden="true" />
+            <div
+              className="project-divider project-reveal"
+              aria-hidden="true"
+            />
 
             <div className="project-step project-reveal">
               <h3>3. Design og prototyping</h3>
@@ -274,11 +280,17 @@ export default function MatSpar() {
               </div>
               <div className="project-step-images">
                 <img src={matsparScreens1} alt="MatSpar designskjermer" />
-                <img src={matsparScreens2} alt="Interaktive skjermbilder fra MatSpar" />
+                <img
+                  src={matsparScreens2}
+                  alt="Interaktive skjermbilder fra MatSpar"
+                />
               </div>
             </div>
 
-            <div className="project-divider project-reveal" aria-hidden="true" />
+            <div
+              className="project-divider project-reveal"
+              aria-hidden="true"
+            />
 
             <div className="project-step project-reveal">
               <h3>4. Testing og validering</h3>
@@ -290,15 +302,15 @@ export default function MatSpar() {
                     gjennomførte vi en brukertest med fem deltakere for å
                     avdekke forbedringsområder. Deltakerne besto av fire
                     studenter og en alenemor, og fikk konkrete oppgaver som å
-                    planlegge en ukemeny, generere en handleliste og
-                    sammenligne matpriser mellom ulike butikker. Under
-                    testingen observerte vi hvordan brukerne navigerte i appen,
-                    hvor de støtte på utfordringer, og hvilke funksjoner de
-                    opplevde som mest verdifulle. Et sentralt funn var at mange
-                    forventet en mer intuitiv måte å redigere handlelisten på,
-                    samt at informasjon om prisbesparelser burde presenteres
-                    tydeligere. Flere ønsket også en enklere løsning for å
-                    justere oppskrifter basert på antall porsjoner.
+                    planlegge en ukemeny, generere en handleliste og sammenligne
+                    matpriser mellom ulike butikker. Under testingen observerte
+                    vi hvordan brukerne navigerte i appen, hvor de støtte på
+                    utfordringer, og hvilke funksjoner de opplevde som mest
+                    verdifulle. Et sentralt funn var at mange forventet en mer
+                    intuitiv måte å redigere handlelisten på, samt at
+                    informasjon om prisbesparelser burde presenteres tydeligere.
+                    Flere ønsket også en enklere løsning for å justere
+                    oppskrifter basert på antall porsjoner.
                   </p>
                 </div>
                 <div>
@@ -325,7 +337,7 @@ export default function MatSpar() {
           <div className="project-divider" aria-hidden="true" />
 
           <section className="project-section project-solution-detail project-reveal">
-            <h2>5. Løsningen</h2>
+            <h3 className="project-section-title">5. Løsningen</h3>
             <div className="project-step-grid">
               <div>
                 <h4>Kjernefunksjoner i MatSpar</h4>
@@ -344,9 +356,9 @@ export default function MatSpar() {
                     basert på ingredienser de allerede har hjemme.
                   </li>
                   <li>
-                    Personlig handleliste: Ingredienser fra måltidsplanen
-                    legges automatisk til i handlelisten, med enkle muligheter
-                    for redigering og fjerning.
+                    Personlig handleliste: Ingredienser fra måltidsplanen legges
+                    automatisk til i handlelisten, med enkle muligheter for
+                    redigering og fjerning.
                   </li>
                   <li>
                     Budsjettoversikt og prissammenligning: Appen gir oversikt
@@ -389,8 +401,8 @@ export default function MatSpar() {
 
           <div className="project-divider" aria-hidden="true" />
 
-          <section className="project-section project-ui project-reveal">
-            <h2>6. UI</h2>
+          <section className="project-section project-solution-detail project-reveal">
+            <h3 className="project-section-title">6. UI</h3>
             <div className="project-step-grid">
               <div>
                 <h4>Design og UI</h4>
@@ -403,12 +415,11 @@ export default function MatSpar() {
                 <h4>Grid og visuell konsistens</h4>
                 <p>
                   MatSpar benytter et 8-punkts grid-system for å sikre et
-                  harmonisk layout og visuell konsistens. Dette skaper en
-                  ryddig struktur der avstander og størrelser er balanserte,
-                  noe som gjør navigasjonen forutsigbar og brukervennlig.
-                  Bruken av whitespace reduserer visuell støy, forbedrer
-                  lesbarheten og hjelper brukeren med å fokusere på det
-                  viktigste innholdet.
+                  harmonisk layout og visuell konsistens. Dette skaper en ryddig
+                  struktur der avstander og størrelser er balanserte, noe som
+                  gjør navigasjonen forutsigbar og brukervennlig. Bruken av
+                  whitespace reduserer visuell støy, forbedrer lesbarheten og
+                  hjelper brukeren med å fokusere på det viktigste innholdet.
                 </p>
               </div>
               <div>
@@ -421,13 +432,13 @@ export default function MatSpar() {
                 </p>
                 <h4>Tilbakemelding og interaksjonsdesign</h4>
                 <p>
-                  MatSpar benytter subtile animasjoner på «Legg til»-siden ved
-                  å foreslå retter som tar i bruk rester fra måltidsplanen, noe
+                  MatSpar benytter subtile animasjoner på «Legg til»-siden ved å
+                  foreslå retter som tar i bruk rester fra måltidsplanen, noe
                   som oppmuntrer til mindre matsvinn og et mer variert kosthold.
                   For å gjøre appen intuitiv og responsiv gir vi umiddelbar
-                  tilbakemelding når brukeren legger til en rett, slik at det
-                  er tydelig at den forrige måltidsplanen erstattes. Dette
-                  skaper en mer forutsigbar og brukervennlig opplevelse.
+                  tilbakemelding når brukeren legger til en rett, slik at det er
+                  tydelig at den forrige måltidsplanen erstattes. Dette skaper
+                  en mer forutsigbar og brukervennlig opplevelse.
                 </p>
               </div>
             </div>
@@ -440,24 +451,25 @@ export default function MatSpar() {
           <div className="project-divider" aria-hidden="true" />
 
           <section className="project-section project-conclusion project-reveal">
-            <h2>7. Konklusjon, viktige læringspunkter og resultat</h2>
+            <h3 className="project-section-title">
+              7. Konklusjon og resultater
+            </h3>
             <div className="project-step-grid">
               <div>
                 <h4>Konklusjon</h4>
                 <p>
                   Etter at den interaktive prototypen ble utviklet i Figma,
-                  gjennomførte vi en brukertest med fem deltakere for å
-                  avdekke forbedringsområder. Deltakerne besto av fire
-                  studenter og en alenemor, og fikk konkrete oppgaver som å
-                  planlegge en ukemeny, generere en handleliste og
-                  sammenligne matpriser mellom ulike butikker. Under
-                  testingen observerte vi hvordan brukerne navigerte i appen,
-                  hvor de støtte på utfordringer, og hvilke funksjoner de
-                  opplevde som mest verdifulle. Et sentralt funn var at mange
-                  forventet en mer intuitiv måte å redigere handlelisten på,
-                  samt at informasjon om prisbesparelser burde presenteres
-                  tydeligere. Flere ønsket også en enklere løsning for å
-                  justere oppskrifter basert på antall porsjoner.
+                  gjennomførte vi en brukertest med fem deltakere for å avdekke
+                  forbedringsområder. Deltakerne besto av fire studenter og en
+                  alenemor, og fikk konkrete oppgaver som å planlegge en
+                  ukemeny, generere en handleliste og sammenligne matpriser
+                  mellom ulike butikker. Under testingen observerte vi hvordan
+                  brukerne navigerte i appen, hvor de støtte på utfordringer, og
+                  hvilke funksjoner de opplevde som mest verdifulle. Et sentralt
+                  funn var at mange forventet en mer intuitiv måte å redigere
+                  handlelisten på, samt at informasjon om prisbesparelser burde
+                  presenteres tydeligere. Flere ønsket også en enklere løsning
+                  for å justere oppskrifter basert på antall porsjoner.
                 </p>
               </div>
               <div>
@@ -467,14 +479,13 @@ export default function MatSpar() {
                   viktige designjusteringer. Navigasjonen ble forenklet, blant
                   annet ved å plassere handlelisten direkte i hovedmenyen for
                   raskere tilgang. Vi forbedret også personalisering av
-                  oppskrifter ved å innføre dynamisk porsjonsjustering, slik
-                  at brukerne enkelt kunne tilpasse oppskrifter til
-                  husholdningens størrelse. Visuelle elementer ble justert for
-                  å tydeliggjøre prisbesparelser, blant annet gjennom
-                  fargekoding og klare indikatorer på hvor mye brukeren kan
-                  spare. Disse forbedringene bidro til at MatSpar ble mer
-                  intuitiv, brukervennlig og bedre tilpasset behovene i
-                  målgruppen.
+                  oppskrifter ved å innføre dynamisk porsjonsjustering, slik at
+                  brukerne enkelt kunne tilpasse oppskrifter til husholdningens
+                  størrelse. Visuelle elementer ble justert for å tydeliggjøre
+                  prisbesparelser, blant annet gjennom fargekoding og klare
+                  indikatorer på hvor mye brukeren kan spare. Disse
+                  forbedringene bidro til at MatSpar ble mer intuitiv,
+                  brukervennlig og bedre tilpasset behovene i målgruppen.
                 </p>
               </div>
             </div>
@@ -486,8 +497,8 @@ export default function MatSpar() {
                 enklere å forstå og bruke. Brukerne opplevde særlig oversikten
                 over ukens måltider som nyttig, og ga tilbakemelding på at
                 navigasjonen føltes intuitiv. Basert på testing gjorde vi
-                justeringer i informasjonsarkitekturen og forenklet enkelte
-                steg i planleggingsflyten.
+                justeringer i informasjonsarkitekturen og forenklet enkelte steg
+                i planleggingsflyten.
               </p>
             </div>
           </section>

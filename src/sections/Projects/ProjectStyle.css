@@ -138,7 +138,7 @@
   max-width: 980px;
 }
 
-.project-intro h2,
+.project-intro .project-section-title,
 .project-intro p {
   text-align: left;
 }
@@ -148,7 +148,7 @@
   justify-items: start;
   text-align: left;
   margin: 2rem 0 1.6rem;
-  max-width: 520px;
+  max-width: 540px;
 }
 
 .project-meta--intro p {
@@ -161,6 +161,15 @@
   content: "•";
   color: #6a685d;
   margin-right: 0.35rem;
+}
+
+.project-meta--wide {
+  max-width: 980px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-meta--wide p {
+  white-space: nowrap;
 }
 
 .project-role {
@@ -207,7 +216,7 @@
   transform: translateY(0);
 }
 
-.project-section h2 {
+.project-section-title {
   font-size: 2.3rem;
   margin-bottom: 0.6rem;
   color: #4c4c3c;
@@ -226,7 +235,7 @@
   max-width: 980px;
 }
 
-.project-design h2,
+.project-design .project-section-title,
 .project-design p {
   text-align: left;
 }
@@ -236,7 +245,7 @@
 }
 
 .project-step h3 {
-  font-size: 1.9rem;
+  font-size: 2.3rem;
   margin: 1.6rem 0 1rem;
   color: #4c4c3c;
   font-weight: 500;
@@ -281,7 +290,7 @@
   max-width: 980px;
 }
 
-.project-solution-detail h2,
+.project-solution-detail .project-section-title,
 .project-solution-detail h4,
 .project-solution-detail p,
 .project-solution-detail .project-list {
@@ -303,7 +312,7 @@
   max-width: 980px;
 }
 
-.project-ui h2,
+.project-ui .project-section-title,
 .project-ui h4,
 .project-ui p {
   text-align: left;
@@ -339,7 +348,7 @@
   max-width: 980px;
 }
 
-.project-conclusion h2,
+.project-conclusion .project-section-title,
 .project-conclusion h4,
 .project-conclusion p {
   text-align: left;
@@ -352,6 +361,10 @@
 .project-conclusion-result {
   margin-top: 2.5rem;
   max-width: 620px;
+}
+
+.project-image-wide {
+  width: 100%;
 }
 
 .project-step-images {
@@ -370,12 +383,20 @@
   box-shadow: none;
 }
 
+.project-step-images--side {
+  grid-template-columns: minmax(0, 0.6fr) minmax(0, 1.4fr);
+  max-width: 980px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .project-problem {
   text-align: left;
   max-width: 980px;
 }
 
-.project-problem h2,
+.project-problem .project-section-title,
 .project-problem p {
   text-align: left;
 }
@@ -501,26 +522,27 @@
     text-align: center;
   }
 
-  .project-section h2,
+  .project-section-title,
+  .project-intro .project-section-title,
   .project-section p,
   .project-meta--intro,
   .project-meta--intro p,
-  .project-problem h2,
+  .project-problem .project-section-title,
   .project-problem p,
   .project-problem .project-list,
-  .project-design h2,
+  .project-design .project-section-title,
   .project-design p,
   .project-step h3,
   .project-step-grid h4,
   .project-step-grid p,
-  .project-solution-detail h2,
+  .project-solution-detail .project-section-title,
   .project-solution-detail h4,
   .project-solution-detail p,
   .project-solution-detail .project-list,
-  .project-ui h2,
+  .project-ui .project-section-title,
   .project-ui h4,
   .project-ui p,
-  .project-conclusion h2,
+  .project-conclusion .project-section-title,
   .project-conclusion h4,
   .project-conclusion p {
     text-align: center;
@@ -577,11 +599,19 @@
     grid-template-columns: 1fr;
   }
 
+  .project-meta--wide p {
+    white-space: normal;
+  }
+
   .project-divider {
     margin: 2.2rem auto;
   }
 
-  .project-section h2 {
+  .project-section-title {
+    font-size: 2rem;
+  }
+
+  .project-step h3 {
     font-size: 2rem;
   }
 
