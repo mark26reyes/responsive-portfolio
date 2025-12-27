@@ -74,7 +74,7 @@ const Navbar: React.FC<NavbarProps> = ({ basePath = "", forceBackground }) => {
         </a>
 
         {/* Desktop / tablet nav */}
-        <div className="hidden md:flex items-center gap-10 rounded-full bg-black/60 px-6 py-3 md:absolute md:left-1/2 md:-translate-x-1/2">
+        <div className="hidden items-center gap-10 rounded-full bg-black/60 px-6 py-3 md:absolute md:left-1/2 md:-translate-x-1/2">
           <div className="flex items-center gap-16 text-base tracking-wide">
             {navLinks.map((link) => (
               <a
@@ -93,7 +93,7 @@ const Navbar: React.FC<NavbarProps> = ({ basePath = "", forceBackground }) => {
         </div>
 
         {/* Floating CTA */}
-        <div className="fixed bottom-8 right-8 z-50 hidden md:flex">
+        <div className="fixed bottom-8 right-8 z-50 hidden">
           <a
             href={`${basePath}#contact`}
             className="inline-flex items-center rounded-full border border-white/70 bg-black/70 px-6 py-3 text-sm tracking-wide text-white shadow-lg backdrop-blur transition hover:-translate-y-0.5 hover:bg-black/85"
@@ -108,23 +108,23 @@ const Navbar: React.FC<NavbarProps> = ({ basePath = "", forceBackground }) => {
 
         <button
           type="button"
-          className="md:hidden flex h-10 w-10 flex-col items-center justify-center bg-transparent p-0 border-0 appearance-none focus:outline-none"
+          className="flex h-10 w-10 flex-col items-center justify-center bg-transparent p-0 border-0 appearance-none focus:outline-none lg:h-12 lg:w-12"
           onClick={toggleMenu}
           aria-label={isOpen ? "Lukk meny" : "Åpne meny"}
           style={{ backgroundColor: "transparent", border: "none", padding: 0 }}
         >
           <span
-            className={`block h-[2px] w-5 bg-white transition-transform ${
+            className={`block h-[2px] w-5 bg-white transition-transform lg:h-[3px] lg:w-7 ${
               isOpen ? "translate-y-[3px] rotate-45" : "mb-[4px]"
             }`}
           />
           <span
-            className={`block h-[2px] w-5 bg-white transition ${
+            className={`block h-[2px] w-5 bg-white transition lg:h-[3px] lg:w-7 ${
               isOpen ? "opacity-0" : "mb-[4px]"
             }`}
           />
           <span
-            className={`block h-[2px] w-5 bg-white transition-transform ${
+            className={`block h-[2px] w-5 bg-white transition-transform lg:h-[3px] lg:w-7 ${
               isOpen ? "-translate-y-[3px] -rotate-45" : ""
             }`}
           />
@@ -132,7 +132,7 @@ const Navbar: React.FC<NavbarProps> = ({ basePath = "", forceBackground }) => {
       </div>
 
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-8 bg-black/50 px-6 text-center text-white font-light backdrop-blur-sm md:hidden">
+        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-8 bg-black/50 px-6 text-center text-white font-light backdrop-blur-sm">
           <button
             type="button"
             onClick={closeMenu}
